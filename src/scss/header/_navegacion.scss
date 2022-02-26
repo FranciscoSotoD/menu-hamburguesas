@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    // position: fixed;
+    // z-index: 100;
+    &__enlace {
+        font-size: 3rem;
+        color: v.$blanco;
+        padding: 2rem;
+        border-radius: 50%;
+        overflow: hidden;
+        transition-property: background-color;
+        transition-duration: .3s;
+        &:hover {
+            background-color: v.$naranja;
+        }
+    }
+}

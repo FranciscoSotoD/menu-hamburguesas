@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/83ae700929.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__heading">Restaurante Hamburguesas</h1>
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-burger"></i> </a>
+            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-pizza-slice"></i> </a>
+            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-ice-cream"></i> </a>
+            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-hotdog"></i> </a>
+        </nav>
+    </header>
+
+    <main class="menu">
+        <div class="menu__hamburguesas">
+            <div class="menu__hamburguesa">
+                <picture>
+                    <source srcset="./build/img/hamburguesa001.avif" type="image/avif">
+                    <source srcset="./build/img/hamburguesa001.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa001.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__contenido">
+                    <h2 class="menu__nombrePlatillo">Hamburguesa sencilla</h2>
+                    <div class="menu__descripcion">
+                        <p class="menu__ingredientes">Carne, queso y verdura</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__hamburguesa">
+                <picture>
+                    <source srcset="./build/img/hamburguesa002.avif" type="image/avif">
+                    <source srcset="./build/img/hamburguesa002.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa002.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__contenido">
+                    <h2 class="menu__nombrePlatillo">Hamburguesa con queso</h2>
+                    <div class="menu__descripcion">
+                        <p class="menu__ingredientes">Mucho queso Manchego</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__hamburguesa">
+                <picture>
+                    <source srcset="./build/img/hamburguesa003.avif" type="image/avif">
+                    <source srcset="./build/img/hamburguesa003.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa003.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__contenido">
+                    <h2 class="menu__nombrePlatillo">Hamburguesa doble</h2>
+                    <div class="menu__descripcion">
+                        <p class="menu__ingredientes">2 carnes de res</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__hamburguesa">
+                <picture>
+                    <source srcset="./build/img/hamburguesa004.avif" type="image/avif">
+                    <source srcset="./build/img/hamburguesa004.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa004.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__contenido">
+                    <h2 class="menu__nombrePlatillo">Hamburguesa Inmensamente Grande</h2>
+                    <div class="menu__descripcion">
+                        <p class="menu__ingredientes">2 ingredientes de todo y muy ricos y dorados</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>

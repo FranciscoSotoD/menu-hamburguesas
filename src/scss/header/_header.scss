@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+
+.header {
+    color: v.$blanco;
+    padding: 3rem;
+    &__heading {
+        font-size: 2.8rem;
+        margin: 0;
+        text-align: left;
+        font-family: v.$fuenteSecundaria;
+        line-height: 1.2;
+    }
+}
