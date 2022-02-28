@@ -1,8 +1,10 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -35,4 +37,14 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.titulo {
+    font-size: 2.8rem;
+    margin: 3rem 0 0 0;
+    text-align: center;
+    font-family: v.$fuenteSecundaria;
+    line-height: 1.2;
+    @include m.tablet {
+        font-size: 4rem;
+    }
 }

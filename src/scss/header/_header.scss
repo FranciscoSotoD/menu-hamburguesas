@@ -1,13 +1,11 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .header {
     color: v.$blanco;
-    padding: 3rem;
-    &__heading {
-        font-size: 2.8rem;
-        margin: 0;
-        text-align: left;
-        font-family: v.$fuenteSecundaria;
-        line-height: 1.2;
-    }
+    background-color: v.$negro;
+    // padding: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }

@@ -15,79 +15,288 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
+    <h1 class="titulo">Restaurante Hamburguesas</h1>
     <header class="header">
-        <h1 class="header__heading">Restaurante Hamburguesas</h1>
-        <nav class="navegacion">
-            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-burger"></i> </a>
-            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-pizza-slice"></i> </a>
-            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-ice-cream"></i> </a>
-            <a class="navegacion__enlace" href="#"> <i class="fa-solid fa-hotdog"></i> </a>
+        <nav class="navegacion" id="navegacion">
+            <a class="navegacion__enlace" href="#1"> 
+                <picture>
+                    <source srcset="build/img/menu__hamburguesa.avif" type="image/avif">
+                    <source srcset="build/img/menu__hamburguesa.webp" type="image/webp">
+                    <img class="navegacion__menu" loading="lazy" src="build/img/menu__hamurguesa.png" width="500" height="300" alt="menu hamburguesa">
+                </picture>
+            </a>
+            <a class="navegacion__enlace" href="#2"> 
+                <picture>
+                    <source srcset="build/img/menu__bebida.avif" type="image/avif">
+                    <source srcset="build/img/menu__bebida.webp" type="image/webp">
+                    <img class="navegacion__menu" loading="lazy" src="build/img/menu__bebida.png" width="500" height="300" alt="menu bebida">
+                </picture>
+            </a>
+            <a class="navegacion__enlace" href="#3"> 
+                <picture>
+                    <source srcset="build/img/menu__hotdog.avif" type="image/avif">
+                    <source srcset="build/img/menu__hotdog.webp" type="image/webp">
+                    <img class="navegacion__menu" loading="lazy" src="build/img/menu__hotdog.png" width="500" height="300" alt="menu hotdog">
+                </picture>
+            </a>
+            <a class="navegacion__enlace" href="#4"> 
+                <picture>
+                    <source srcset="build/img/menu__helado.avif" type="image/avif">
+                    <source srcset="build/img/menu__helado.webp" type="image/webp">
+                    <img class="navegacion__menu" loading="lazy" src="build/img/menu__helado.png" width="500" height="300" alt="menu helado">
+                </picture>
+            </a>
         </nav>
     </header>
 
     <main class="menu">
-        <div class="menu__hamburguesas">
-            <div class="menu__hamburguesa">
+        <div class="menu__categoria" id="1">
+            <div class="menu__contenido">
                 <picture>
                     <source srcset="./build/img/hamburguesa001.avif" type="image/avif">
                     <source srcset="./build/img/hamburguesa001.webp" type="image/webp">
                     <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa001.png" width="500" height="300" alt="burguer">
                 </picture>
-                <div class="menu__contenido">
+                <div class="menu__descripcion">
                     <h2 class="menu__nombrePlatillo">Hamburguesa sencilla</h2>
-                    <div class="menu__descripcion">
+                    <div class="menu__descripcionFlex">
                         <p class="menu__ingredientes">Carne, queso y verdura</p>
                         <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
                     </div>
                     <p class="menu__precio">$35 MX</p>
                 </div>
             </div>
-            <div class="menu__hamburguesa">
+            <div class="menu__contenido">
                 <picture>
                     <source srcset="./build/img/hamburguesa002.avif" type="image/avif">
                     <source srcset="./build/img/hamburguesa002.webp" type="image/webp">
                     <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa002.png" width="500" height="300" alt="burguer">
                 </picture>
-                <div class="menu__contenido">
+                <div class="menu__descripcion">
                     <h2 class="menu__nombrePlatillo">Hamburguesa con queso</h2>
-                    <div class="menu__descripcion">
-                        <p class="menu__ingredientes">Mucho queso Manchego</p>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Mucho queso manchego</p>
                         <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
                     </div>
                     <p class="menu__precio">$35 MX</p>
                 </div>
             </div>
-            <div class="menu__hamburguesa">
+            <div class="menu__contenido">
                 <picture>
                     <source srcset="./build/img/hamburguesa003.avif" type="image/avif">
                     <source srcset="./build/img/hamburguesa003.webp" type="image/webp">
                     <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa003.png" width="500" height="300" alt="burguer">
                 </picture>
-                <div class="menu__contenido">
-                    <h2 class="menu__nombrePlatillo">Hamburguesa doble</h2>
-                    <div class="menu__descripcion">
-                        <p class="menu__ingredientes">2 carnes de res</p>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Hamburguesa con tocino</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Tocino crujiente y jugoso</p>
                         <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
                     </div>
                     <p class="menu__precio">$35 MX</p>
                 </div>
             </div>
-            <div class="menu__hamburguesa">
+            <div class="menu__contenido">
                 <picture>
                     <source srcset="./build/img/hamburguesa004.avif" type="image/avif">
                     <source srcset="./build/img/hamburguesa004.webp" type="image/webp">
                     <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa004.png" width="500" height="300" alt="burguer">
                 </picture>
-                <div class="menu__contenido">
-                    <h2 class="menu__nombrePlatillo">Hamburguesa Inmensamente Grande</h2>
-                    <div class="menu__descripcion">
-                        <p class="menu__ingredientes">2 ingredientes de todo y muy ricos y dorados</p>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Hamburguesa inmensamente grande</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Doble de todos los ingredientes</p>
                         <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
                     </div>
                     <p class="menu__precio">$35 MX</p>
                 </div>
             </div>
-
+        </div>
+        <div class="menu__categoria" id="2">
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/bebida__001.avif" type="image/avif">
+                    <source srcset="./build/img/bebida__001.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/bebida__001.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Refresco de 600ml</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">De muchos sabores</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/bebida__002.avif" type="image/avif">
+                    <source srcset="./build/img/bebida__002.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/bebida__002.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Jugo de naranja</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Narnaj 100% pura</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/bebida__003.avif" type="image/avif">
+                    <source srcset="./build/img/bebida__003.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/bebida__003.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Deliciosa malteada</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">De muchos sabores</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/bebida__004.avif" type="image/avif">
+                    <source srcset="./build/img/bebida__004.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hamburguesa004.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Limonada</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Limonada muy fría y refrescante</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu__categoria" id="3">
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/hotdog__001.avif" type="image/avif">
+                    <source srcset="./build/img/hotdog__001.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hotdog__001.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Hotdog sencillo</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Salchica y verdura</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/hotdog__002.avif" type="image/avif">
+                    <source srcset="./build/img/hotdog__002.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hotdog__002.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Hotdog con tocino</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Salchica, verdura y tocino crujiente</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/hotdog__003.avif" type="image/avif">
+                    <source srcset="./build/img/hotdog__003.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hotdog__003.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Hotdog con queso</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Salchica, verdura y queso</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/hotdog__004.avif" type="image/avif">
+                    <source srcset="./build/img/hotdog__004.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hotdog__004.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Hotdog completo</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">2 ingredientes de todo</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu__categoria" id="4">
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/helado__001.avif" type="image/avif">
+                    <source srcset="./build/img/helado__001.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/helado__001.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Helado de chocolate</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Delicioso sabor a chocolate</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/helado__002.avif" type="image/avif">
+                    <source srcset="./build/img/helado__002.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/helado__002.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Helado combinado</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Elige tus 3 sabores favoritos</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/helado__003.avif" type="image/avif">
+                    <source srcset="./build/img/helado__003.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/hotdog__003.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Helado de vainilla</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Rico sabor a vainilla</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
+            <div class="menu__contenido">
+                <picture>
+                    <source srcset="./build/img/helado__004.avif" type="image/avif">
+                    <source srcset="./build/img/helado__004.webp" type="image/webp">
+                    <img class="menu__imagen" loading="lazy" src="./build/img/helado__004.png" width="500" height="300" alt="burguer">
+                </picture>
+                <div class="menu__descripcion">
+                    <h2 class="menu__nombrePlatillo">Helado de fresa</h2>
+                    <div class="menu__descripcionFlex">
+                        <p class="menu__ingredientes">Delicioso sabor a fresa</p>
+                        <img class="menu__imgFuego" src="build/img/fuego__001.svg" alt="fuego">
+                    </div>
+                    <p class="menu__precio">$35 MX</p>
+                </div>
+            </div>
         </div>
     </main>
 

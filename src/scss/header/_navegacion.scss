@@ -1,15 +1,18 @@
 @use 'base/variables' as v;
 
 .navegacion {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
-    // position: fixed;
-    // z-index: 100;
+    max-width: 50rem;
+    margin: 0 auto;
     &__enlace {
         font-size: 3rem;
         color: v.$blanco;
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 50%;
         overflow: hidden;
         transition-property: background-color;
